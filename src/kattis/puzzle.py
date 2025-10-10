@@ -1,4 +1,3 @@
-import sys
 from collections import deque
 
 def solve_puzzle(lines: list[str]) -> int:
@@ -17,7 +16,7 @@ def solve_puzzle(lines: list[str]) -> int:
     goal = "123-"
     start = ''.join(line.strip() for line in lines[:2])
 
-    # Directions: up, down, left, right
+    #Directions: up, down, left, right
     moves = {
         0: [1, 2],      #top-left
         1: [0, 3],      #top-right
@@ -45,6 +44,5 @@ def solve_puzzle(lines: list[str]) -> int:
 
     return -1  
 
-input_lines = sys.stdin.read().splitlines()
-result = solve_puzzle(input_lines)
-print(result)
+input_data = ["2-", "13"]
+print(solve_puzzle(input_data))

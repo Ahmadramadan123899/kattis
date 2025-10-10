@@ -1,4 +1,3 @@
-import sys
 def different(lines: list[str])-> list[int]:
     """_summary_
 
@@ -15,8 +14,3 @@ def different(lines: list[str])-> list[int]:
        a, b = map(int, line.strip().split())
        results.append(abs(a - b))
     return results
-
-input_lines= sys.stdin.readlines()
-dif_array=different(input_lines)
-for diff in dif_array:
-    print(diff)

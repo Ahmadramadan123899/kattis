@@ -15,7 +15,3 @@ def reorder_nb(nums: str, order: str) -> str:
     mapping = {'A': nums[0], 'B': nums[1], 'C': nums[2]}
 
     return ' '.join(str(mapping[ch]) for ch in order)
-
-nums = "1 2 3"
-order = "ACB"
-print(reorder_nb(nums, order))

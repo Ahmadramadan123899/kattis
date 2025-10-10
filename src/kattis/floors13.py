@@ -16,4 +16,3 @@ def floors(x: int) -> int:
      else:
       return x
      
-print(floors(14))

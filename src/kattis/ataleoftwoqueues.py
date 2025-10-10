@@ -1,4 +1,3 @@
-import sys
 def atableoftwoqueues(lines: list[str]) -> str:
     """_summary_
 
@@ -26,7 +25,3 @@ def atableoftwoqueues(lines: list[str]) -> str:
         return "right"
     else:
         return "either"
-
-input_lines= sys.stdin.readlines()
-str22=atableoftwoqueues(input_lines)
-print(str22)

@@ -19,10 +19,9 @@ def atmmaintenance(strr:str,strr2:str) -> list[int]:
     for amount in withdrawals:
         if K >= amount:
            K -= amount
-           result.append('1')
+           result.append(1)
         else:
-           result.append('0')
+           result.append(0)
 
     return result
 
-print(''.join(atmmaintenance("4 5","2 2 2 2")))

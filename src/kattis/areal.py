@@ -12,6 +12,4 @@ def areal(strr: str) -> float:
     a = int(strr)
     side = math.sqrt(a)
     perimeter = 4 * side
-    return f"{perimeter:.6f}"
-
-print(areal("5"))
+    return round(perimeter,6)

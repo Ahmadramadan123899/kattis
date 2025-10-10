@@ -12,5 +12,3 @@ def can_john_go(jon:str,doctor:str) -> str:
     jon = jon.strip()
     doctor = doctor.strip()
     return "go" if jon.count('a') >= doctor.count('a') else "no"
-
-print(can_john_go("ahmad","aaa"))

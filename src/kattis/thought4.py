@@ -1,6 +1,5 @@
-import sys
 from itertools import product
-def thought4(integ:int,queries:list[int]) -> list:
+def thought4(queries:list[int]) -> list:
     """_summary_
 
     Args:
@@ -31,11 +30,3 @@ def thought4(integ:int,queries:list[int]) -> list:
             output.append("no solution")
 
     return output
-
-
-lines = sys.stdin.read().splitlines()
-m = int(lines[0])
-queries = list(map(int, lines[1:]))
-answers = thought4(m,queries)
-for line in answers:
-    print(line)
