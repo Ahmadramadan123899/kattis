@@ -1,16 +1,14 @@
 [tool.poetry]
-packages = [{include = "kattis", from = "src"}]
 name = "kattis"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Ahmad Ramadan",email = "ahmad.ramadan2005f@gmail.com"}
-]
+description = "Pythonified Kattis solutions using Poetry"
+authors = ["Ahmad Ramadan <ahmad.ramadan2005f@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-]
-License="MIT"
+license = "MIT"
+packages = [{ include = "kattis", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.13"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
