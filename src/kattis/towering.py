@@ -1,5 +1,5 @@
 from itertools import combinations
-def towering(integers:list[int]) -> list[int]:
+def towering(data:list[int]) -> list[int]:
     """_summary_
 
     Args:
@@ -12,7 +12,6 @@ def towering(integers:list[int]) -> list[int]:
         list[int]:Output the heights of the three boxes in the first tower (i.e., the tower specified by the first tower height in the input), then the heights of the three boxes in the second tower. Each set of boxes should be output in order of decreasing height. Each test case will have a unique answer.
     problem url: https://open.kattis.com/problems/towering
     """
-    data=list(map(int,integers.split()))
     boxes=data[:6]
     tower1,tower2=data[6],data[7]
     for combo in combinations(boxes,3):
@@ -24,6 +23,3 @@ def towering(integers:list[int]) -> list[int]:
         elif sum(group1)==tower2 and sum(group2)==tower1:
             finallist= sorted(group2,reverse=True)+sorted(group1,reverse=True)
             return finallist
-        
-list22=towering("12 8 2 4 10 3 25 14")
-print(list22)
