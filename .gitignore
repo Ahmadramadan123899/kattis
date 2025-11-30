@@ -5,3 +5,8 @@ dist/
 *.egg-info/
 *.whl
 *.tar.gz
+
+# Coverage reports
+.coverage
+coverage.xml
+htmlcov/
