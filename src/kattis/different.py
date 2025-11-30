@@ -1,4 +1,4 @@
-def different(lines: list[str])-> list[int]:
+def different(lines: list[str]) -> list[int]:
     """_summary_
 
     Args:
@@ -7,10 +7,10 @@ def different(lines: list[str])-> list[int]:
     Returns:
         list[int]:the absolute difference for each line
     problem url: https://open.kattis.com/problems/different
-   
+
     """
-    results=[]
+    results = []
     for line in lines:
-       a, b = map(int, line.strip().split())
-       results.append(abs(a - b))
+        a, b = map(int, line.strip().split())
+        results.append(abs(a - b))
     return results

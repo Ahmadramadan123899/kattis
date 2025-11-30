@@ -1,5 +1,5 @@
 # Read input
-def atmmaintenance(strr:str,strr2:str) -> list[int]:
+def atmmaintenance(strr: str, strr2: str) -> list[int]:
     """_summary_
 
     Args:
@@ -12,16 +12,15 @@ def atmmaintenance(strr:str,strr2:str) -> list[int]:
     problem url:https://open.kattis.com/problems/atmmaintenance
     """
     N, K = map(int, strr.split())
-    withdrawals = list(map(int,strr2.split()))
+    withdrawals = list(map(int, strr2.split()))
 
     result = []
 
     for amount in withdrawals:
         if K >= amount:
-           K -= amount
-           result.append(1)
+            K -= amount
+            result.append(1)
         else:
-           result.append(0)
+            result.append(0)
 
     return result
-

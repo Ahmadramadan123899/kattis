@@ -12,6 +12,6 @@ def reorder_nb(nums: str, order: str) -> str:
     order = order.strip()
 
     nums.sort()
-    mapping = {'A': nums[0], 'B': nums[1], 'C': nums[2]}
+    mapping = {"A": nums[0], "B": nums[1], "C": nums[2]}
 
-    return ' '.join(str(mapping[ch]) for ch in order)
+    return " ".join(str(mapping[ch]) for ch in order)

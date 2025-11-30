@@ -1,4 +1,4 @@
-def can_john_go(jon:str,doctor:str) -> str:
+def can_john_go(jon: str, doctor: str) -> str:
     """
     Determines if Jon can go to the doctor based on the number of 'a's in their cries.
     Parameters:
@@ -11,4 +11,4 @@ def can_john_go(jon:str,doctor:str) -> str:
     """
     jon = jon.strip()
     doctor = doctor.strip()
-    return "go" if jon.count('a') >= doctor.count('a') else "no"
+    return "go" if jon.count("a") >= doctor.count("a") else "no"
