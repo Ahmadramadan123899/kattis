@@ -37,3 +37,6 @@ jobs:
           flags: unittests
           name: codecov-coverage
 
+      - name: Run pylint
+        run: poetry run pylint src/kattis
+
