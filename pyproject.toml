@@ -9,8 +9,12 @@ packages = [{ include = "kattis", from = "src" }]
 
 [tool.poetry.dependencies]
 python = ">=3.11"
+marimo = "^0.10.12"
 
 [build-system]
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests", "src"]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 [dependency-groups]
@@ -20,3 +24,22 @@ dev = [
     "pylint (>=4.0.3,<5.0.0)",
     "black (>=25.11.0,<26.0.0)"
 ]
+
+
+[tool.marimo.ai]
+rules = "- prefer polars over pandas\n- make charts using altair"
+
+[tool.marimo.save]
+autosave = "after_delay"
+autosave_delay = 1000
+format_on_save = true
+
+[tool.marimo.package_management]
+manager = "poetry"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]
